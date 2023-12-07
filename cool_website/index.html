@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+        body {
+            background-image: url('pics/bg.jpg'); /* 设置背景图片 */
+            background-size: cover; /* 确保图片完全覆盖背景，但可能不完全显示 */
+            background-repeat: no-repeat; /* 防止背景图片重复 */
+            background-attachment: fixed; /* 背景图片固定，内容滚动 */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+                /* 更改导航栏背景颜色 */
+        .navbar-inverse {
+            background-color: #ff7300; /* 深灰色背景 */
+        }
+
+        /* 更改导航链接的颜色 */
+        .navbar-inverse .navbar-nav > li > a {
+            color: #FFFFFF; /* 白色链接 */
+        }
+
+        .navbar-inverse .navbar-nav > li > a:hover,
+        .navbar-inverse .navbar-nav > li > a:focus {
+            color: #6a88c8; /* 悬停时的橙色 */
+        }
+
+        /* 更改品牌的颜色 */
+        .navbar-inverse .navbar-brand {
+            color: #FFFFFF; /* 白色品牌文字 */
+        }
+
+        .navbar-inverse .navbar-brand:hover,
+        .navbar-inverse .navbar-brand:focus {
+            color: #F0AD4E; /* 悬停时的橙色 */
+        }
+
+        /* 更改折叠按钮的颜色 */
+        .navbar-inverse .navbar-toggle .icon-bar {
+            background-color: #F0AD4E; /* 橙色条形图标 */
+        }
+
+        .navbar-inverse {
+            border: none; /* 去除边框 */
+            box-shadow: none; /* 去除阴影 */
+        }
+        .navbar-logo {
+            height: 49px; /* 设置图像高度，根据需要调整 */
+            width: auto; /* 自动调整宽度以保持图像比例 */
+            margin-right: 10px; /* 右边距，可调整图像和文字之间的空间 */
+            
+        }
+
+        .transparent-bg {
+            background-color:  rgba(255, 255, 255, 0.4) ;
+        }
+
+    </style>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);">
+      <div class="container">
+        <div class="navbar-header">
+            <img src="pics/module.jpg" class="navbar-logo">  <!-- added myself to create an image next to DiveMaster Pro-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="navbar-brand" href="#">DiveMaster Pro</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#obj">Project Objective</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#drawings">Drawings</a></li>
+            <li><a href="#testing">Testing</a></li>
+            <li><a href="#result">Result</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); ">DiveMaster Pro</h1>
+        <p class="lead">A Project By<br>Yueyi Yang<span style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);"> 📧 yy2225@cornell.edu</span><br>Yuheng He <span style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">📧 yh2229@cornell.edu</span></p>
+      </div>
+
+      <hr>
+      <div class="center-block">
+          <iframe width="640" height="360" src="https://www.youtube.com/embed/GuM8vTq0jd4" frameborder="0" allowfullscreen></iframe>
+          <h4 style="text-align:center;">Demonstration Video</h4>
+      </div>
+
+      <hr id="intro">
+      <div style="text-align:center;">
+              <h2 style=" display: inline-block; color: black; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Introduction</h2>
+              <p style="text-align: left;padding: 0px 30px; font-size: 18px; "><strong>DiveMaster Pro</strong> is an engaging mobile game where players select a character to dive into a
+                swimming pool. The goal is to control the character's diving through touch screen or buttons,
+                aiming to land on a floating hoop for points. The closer the dive is to the hoop's center, the
+                higher the score. The game becomes progressively challenging with faster hoop movement and
+                the introduction of obstacles like bombs and crocodiles.<br>
+                Players can track their scores with a historical score system, and the game offers touch and
+                button controls. It also features a speaker module for immersive diving sounds and feedback.
+                Dive into DiveMaster Pro and test your diving skills for a fun and competitive gaming
+                experience.
+                </p>
+              <img class="img-rounded" src="pics/11.jpg" alt="Generic placeholder image" width="300" height="240"  style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);">
+              <img class="img-rounded" src="pics/22.jpg" alt="Generic placeholder image" width="300" height="240" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);">
+              <img class="img-rounded" src="pics/33.jpg" alt="Generic placeholder image" width="300" height="240" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);">
+
+      </div>
+
+    <hr id='obj'>
+
+      <div class="row">
+          <div class="col-md-4" style="text-align:center;">
+          <img class="img-rounded" src="pics/module.jpg" alt="Generic placeholder image" width="300" height="240" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);">
+          </div>
+          <div class="col-md-8" style="font-size:18px;">
+          <h2 style="display: inline-block; color: black;  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">Project Objective:</h2>
+          <ul>
+              <li>Players can control the character's diving using buttons or screen touch.</li>
+                <li>Each round will increase in difficulty, with the hoop's floating speed getting faster, and
+                    also there are some other things in the swimming pool such as bombs and crocodiles.</li>
+            <li>There are two game modes: one is easy, where the swim ring moves horizontally left and right, and the other is hard, where the swim ring appears from any position and moves back and forth, with the addition of bombs and crocodiles.</li>
+            <li>We also designed an arcade game box using 3D printing and assembled it.</li>
+          </ul>
+          </div>
+      </div>
+
+    <hr id='design'>
+
+      <div style="text-align:center;">
+              <h2 style="display: inline-block; color: black;  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">Design</h2>
+              <p style="text-align: left;padding: 0px 30px; font-size: 18px;">In the hardware section, we connected three buttons and a Raspberry Pi via GPIO, powered the LED lights on the buttons, and integrated a speaker for playing sound effects.</p>
+              <img class="img-rounded" src="pics/pi_transparent.png" alt="Generic placeholder image" width="300" height="240" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);">
+              <p style="text-align: left;padding: 0px 30px; font-size: 18px;">In the software section, here is the mindmap.</p>
+              <img class="img-rounded" src="pics/Software Configuration (2).png" style="opacity: 0.55; filter: contrast(300%);"  alt="Generic placeholder image" width="1180" height="1850" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);">
+
+
+      </div>
+
+    <hr id='drawings'>
+
+      <div style="text-align:center;">
+              <h2 style=" display: inline-block; color: black; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Drawings</h2>
+              <p style="text-align: left;padding: 0px 30px; font-size: 18px;">In the 3D design section, here is our initial design.</p>
+              <img class="img-rounded" src="pics/design1.png" style="opacity: 0.9;" alt="Generic placeholder image" width="300" height="240">
+              <img class="img-rounded" src="pics/design2.png" style="opacity: 0.9;" alt="Generic placeholder image" width="400" height="240">
+      </div>
+
+    <hr id='testing'>
+
+      <div style="text-align:center;">
+              <h2 style=" display: inline-block; color: black; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Testing</h2>
+              <p style="text-align: left;padding: 0px 30px; font-size: 18px;">❗️❗️❗️❗️❗️v记得加图片？maybe加一个gif？Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem nulla, consectetur at leo vel, pretium bibendum nisl. Cras blandit quam a enim ultrices, eu convallis enim posuere. Donec eleifend enim sed purus consectetur, vitae cursus lectus varius. Vivamus consectetur felis nec est venenatis posuere. Phasellus vitae aliquet erat. In laoreet lacinia mollis. Quisque iaculis nisl fermentum pharetra lobortis. Donec rhoncus dui sem, ac molestie leo tristique vel. Phasellus in nibh feugiat, fringilla lectus in, elementum magna. Etiam quis dui condimentum, tempus ex in, dapibus est. Cras ut congue augue. Donec ac enim ex. Ut id tristique risus, vel porttitor quam. Sed ultricies enim eu nibh porttitor, vel sodales enim feugiat. Fusce volutpat venenatis magna ac ultrices. Curabitur eget urna ut nulla mattis convallis non eu diam.</p>
+      </div>
+
+    <hr id='result'>
+
+      <div style="text-align:center;">
+              <h2 style=" display: inline-block; color: black; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Result</h2>
+              <p style="text-align: left;padding: 0px 30px; font-size: 18px;">We successfully connected various hardware components, and the 3D printing and assembly were successful, resulting in an aesthetically pleasing design. Moreover, the code ran smoothly and efficiently. The trial play went well, and everyone was very curious about our project, eagerly trying out our mini-game.</p>
+      </div>
+
+    <hr>
+
+    <div class="row" style="text-align:center;">
+          <h2 style=" display: inline-block; color: black; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Work Distribution</h2>
+          <div style="text-align:center;">
+              <img class="img-rounded" src="pics/group.jpg" alt="Generic placeholder image" style="width:80%;">
+              <h4>Project group picture</h4>
+          </div>
+          <div class="col-md-6" style="font-size:16px">
+              <img class="img-rounded" src="pics/a.png" alt="Generic placeholder image" width="240" height="240">
+              <h3>Yueyi Yang</h3>
+              <p class="lead">yy2225@cornell.edu</p>
+              <p>Designed the overall software architecture.
+          </div>
+          <div class="col-md-6" style="font-size:16px">
+              <img class="img-rounded" src="pics/b.png" alt="Generic placeholder image" width="240" height="240">
+              <h3>Yuheng He</h3>
+              <p class="lead">yh2229@cornell.edu</p>
+              <p>Designed the overall hardware architecture and 3d print files.
+          </div>
+      </div>
+
+    <hr>
+      <div style="font-size:18px">
+          <h2 style=" display: inline-block; color: black; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Parts List</h2>
+          <ul>
+              <li>Raspberry Pi $35.00</li>
+              <li><a href="https://www.amazon.com/gp/product/B01MSNXLN0/ref=ewc_pr_img_1?smid=A3H7VB6FZ4M9FM&th=1">Arcade Buttons 60mm Dome 2.36 inch LED Push Button </a> $20</li>
+              <li>Resistors and Wires - Provided in lab</li>
+              <li>3D print - Provided in Cornell Maker Club</li>
+          </ul>
+          <h3>Total: 💰$55</h3>
+      </div>
+      <hr>
+      <div style="font-size:18px">
+          <h2 style=" display: inline-block; color: black; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">References</h2>
+          <br>
+          <a href="http://getbootstrap.com/">Bootstrap</a><br>
+          <a href="https://www.pygame.org/docs/">Pygame Library</a><br>
+          <a href="https://sourceforge.net/p/raspberry-gpio-python/wiki/Home/">R-Pi GPIO Document</a><br>
+
+      </div>
+
+    <hr>
+
+      <div class="row">
+              <h2 style=" display: inline-block; color: black; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Code Appendix</h2>
+              <p style="text-align: left;padding: 0px 30px; font-size: 18px;">⭐️Complete code hosted on GitHub: <a href="https://github.com/Aprilyyyang/divemasterPro.git">https://github.com/Aprilyyyang/divemasterPro.git</a>
+              <h3 style=" display: inline-block; color: black; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">main.py</h3>
+              <pre class="transparent-bg"><code class = "python transparent-bg">
+                import sys
+                import time
+                import pygame
+                from random import *
+                from pygame.locals import *
+                import RPi.GPIO as GPIO
+                import os
+          
+                # Initialize pygame and set up the display
+                os.putenv('SDL_VIDEODRIVER', 'fbcon')
+                os.putenv('SDL_FBDEV', '/dev/fb1')
+                os.putenv('SDL_MOUSEDRV', 'TSLIB')
+                
+                os.putenv('SDL_MOUSEDEV', '/dev/input/touchscreen')
+                
+                pygame.init()
+                width = 320
+                height = 240
+                screen = pygame.display.set_mode((width, height))
+                clock = pygame.time.Clock()
+                
+                class Position(object):
+                    def __init__(self, x, y):
+                        self.x = x
+                        self.y = y
+                
+                pygame.mixer.init()
+                background1 = r'background.mp3'
+                background2 = r'background4.mp3'
+                background3 = r'background3.wav'
+                current_music = None
+                
+                def play_background_music(background):
+                    global current_music
+                    if current_music is not None:
+                        current_music.stop()
+                    current_music = pygame.mixer.Sound(background)
+                    current_music.play(-1)
+                
+                def exit_end():
+                    pygame.quit()
+                    quit()
+                
+                
+                def draw_text(surface, text, font, color, rect, max_width):
+                    words = text.split(' ')
+                    space_width, word_height = font.size(' ')
+                    current_line = []
+                    current_line_width = 0
+                    lines = []
+                
+                    for word in words:
+                        word_width, _ = font.size(word)
+                
+                        if current_line and current_line_width + space_width + word_width <= max_width:
+                            current_line.append(' ')
+                            current_line_width += space_width
+                
+                        if current_line_width + word_width <= max_width:
+                            current_line.append(word)
+                            current_line_width += word_width
+                        else:
+                            lines.append(' '.join(current_line))
+                            current_line = [word]
+                            current_line_width = word_width
+                
+                    lines.append(' '.join(current_line))
+                
+                    y = rect.y
+                
+                    for line in lines:
+                        text_surface = font.render(line, True, color)
+                        text_rect = text_surface.get_rect(topleft=(rect.x, y))
+                        surface.blit(text_surface, text_rect)
+                        y += word_height
+                
+                    return y - rect.y  # Return the total height used
+                
+                
+                
+                def handle_start_screen_events(event, game_start_btn=None, game_mode_btn1=None, game_mode_btn2=None, music_btn=None):
+                    if event.type == pygame.MOUSEBUTTONUP:
+                        if game_start_btn and game_start_btn.collidepoint(event.pos):
+                            return True
+                        elif game_mode_btn1 and game_mode_btn1.collidepoint(event.pos):
+                            return 1
+                        elif game_mode_btn2 and game_mode_btn2.collidepoint(event.pos):
+                            return 2
+                        elif music_btn and music_btn.collidepoint(event.pos):
+                            return "music"
+                        elif return_btn and return_btn.collidepoint(event.pos):
+                            return 3  # Change this line to return the correct mode for "Return" button
+                
+                
+                def into_game():
+                    start_flag = False
+                    global return_btn
+                    mode = 0
+                    music_mode = 0 
+                    
+                
+                    # Load  background image and scale it to 320x240
+                    original_background = pygame.image.load("OIP.jpg")
+                    background_image = pygame.transform.scale(original_background, (320, 240))
+                
+                    # Load the additional image and scale it 
+                    additional_image = pygame.image.load("title3.png")
+                    additional_image = additional_image.convert()  
+                    additional_image.set_colorkey((255, 255, 255)) 
+                    additional_image = pygame.transform.scale(additional_image, (320, 90))
+                
+                    while mode == 0:
+                        # Blit the background image
+                        screen.blit(background_image, (0, 0))
+                
+                        # Blit the additional image in the of the screen
+                        screen.blit(additional_image, (0, 0))
+                
+                        for event in pygame.event.get():
+                            if event.type == pygame.QUIT:
+                                exit_end()
+                
+                            if not start_flag:
+                                game_start_btn = pygame.Rect(144, 110, 48, 40)
+                                pygame.draw.rect(screen, (255, 0, 0), game_start_btn)
+                                game_start_font = pygame.font.Font(None, 12)
+                                game_start_text = game_start_font.render("Start Game", True, (255, 255, 255))
+                                game_start_text_rect = game_start_text.get_rect(center=game_start_btn.center)
+                                screen.blit(game_start_text, game_start_text_rect)
+                                pygame.display.update()
+                
+                                if event.type == pygame.MOUSEBUTTONUP:
+                                    if game_start_btn.collidepoint(event.pos):
+                                        start_flag = True
+                            else:
+                                # Define button positions
+                                btn_width = 68
+                                btn_height = 25
+                                btn_margin = 20
+                                btn1_x = int(width / 3) - btn_width - btn_margin + 30
+                                btn2_x = int(2 * width / 3) + btn_margin - 30
+                                btn_y = int(height / 3 + 15)
+                                
+                                 # Button 1
+                
+                                game_mode_btn1 = pygame.Rect(btn1_x, btn_y, btn_width, btn_height * 2)
+                                pygame.draw.rect(screen, (255, 0, 0), game_mode_btn1)
+                                game_start_font = pygame.font.Font(None, 12)
+                                game_start_text = game_start_font.render("EASY", True, (255, 255, 255))
+                                game_start_text_rect = game_start_text.get_rect(center=game_mode_btn1.center)
+                                screen.blit(game_start_text, game_start_text_rect)
+                                 
+                                 # Button 2
+                
+                                game_mode_btn2 = pygame.Rect(btn2_x, btn_y, btn_width, btn_height * 2)
+                                pygame.draw.rect(screen, (255, 0, 0), game_mode_btn2)
+                                game_start_text = game_start_font.render("HARD", True, (255, 255, 255))
+                                game_start_text_rect = game_start_text.get_rect(center=game_mode_btn2.center)
+                                screen.blit(game_start_text, game_start_text_rect)
+                
+                                 # Button music
+                
+                                music_btn = pygame.Rect(245, 210, btn_width, btn_height)
+                                pygame.draw.rect(screen, (0, 0, 255), music_btn)
+                                music_text = game_start_font.render("Music", True, (255, 255, 255))
+                                music_text_rect = music_text.get_rect(center=music_btn.center)
+                                screen.blit(music_text, music_text_rect)
+                
+                                 # Button return
+                
+                                return_btn = pygame.Rect(5, 210, btn_width, btn_height)
+                                pygame.draw.rect(screen, (0, 255, 0), return_btn)
+                                game_start_text = game_start_font.render("return", True,( 255, 255, 255))
+                                game_start_text_rect = game_start_text.get_rect(center=return_btn.center)
+                                screen.blit(game_start_text, game_start_text_rect)
+                
+                
+                                # Explain the game text box for Button 1
+                                
+                                text1 = "moving left and right"
+                                lines1 = text1.split('\n')
+                                text_rect1 = pygame.Rect(0, 0, btn_width, btn_height * len(lines1))
+                                text_surface1 = pygame.Surface((btn_width, btn_height * len(lines1)))
+                                text_surface1.set_colorkey((0, 0, 0))  # Make black transparent
+                                #text_surface1.fill((0,0,0))  # Set the background color, adjust as needed
+                                game_start_font = pygame.font.Font(None, 14) 
+                                # Adjust max_height here based on your preference
+                                #max_height1 = 200  # can change this value
+                                #draw_text(text_surface1, text1, game_start_font, (255, 255, 255), text_rect1, btn_width, max_height1)
+                
+                               # text_rect1.topleft = (game_mode_btn1.centerx - btn_width / 2, game_mode_btn1.bottom + 10)
+                               # Example usage
+                                text_rect1 = pygame.Rect(0, 0, btn_width, 100)
+                                text_height1 = draw_text(text_surface1, text1, game_start_font, (0, 0, 255), text_rect1, btn_width)
+                                text_rect1.topleft = (game_mode_btn1.centerx - btn_width / 2, game_mode_btn1.bottom + 10)
+                
+                
+                                # Explain the game text box for Button 2
+                                text2 = "Bounce! Bomb! Crocodile!"
+                                lines2 = text2.split('\n')
+                                text_rect2 = pygame.Rect(0, 0, btn_width, btn_height * len(lines2))
+                                text_surface2 = pygame.Surface((btn_width, btn_height * len(lines2)))
+                                text_surface2.set_colorkey((0, 0, 0))  # Make black transparent
+                                text_rect2 = pygame.Rect(0, 0, btn_width, 100)
+                                text_height2 = draw_text(text_surface2, text2, game_start_font, (0,0,255), text_rect2, btn_width)
+                                text_rect2.topleft = (game_mode_btn2.centerx - btn_width / 2, game_mode_btn2.bottom + 10)
+                
+                
+                                screen.blit(text_surface1, text_rect1)
+                                screen.blit(text_surface2, text_rect2)
+                
+                                pygame.display.update()
+                
+                                event_result = handle_start_screen_events(event, game_start_btn, game_mode_btn1, game_mode_btn2, music_btn)
+                                if event.type == pygame.MOUSEBUTTONUP:
+                                    if game_mode_btn1.collidepoint(event.pos):
+                                        mode = 1
+                                    elif game_mode_btn2.collidepoint(event.pos):
+                                        mode = 2
+                                    elif return_btn.collidepoint(event.pos):
+                                        mode = 3
+                
+                                if event_result == "music":
+                                    # Toggle through different music modes
+                                    music_mode = (music_mode + 1) % 4
+                                    if music_mode == 1:
+                                        # Play background music 1
+                                        play_background_music(background1)
+                                        print("Playing Background Music 1")
+                                    elif music_mode == 2:
+                                        # Play background music 2
+                                        play_background_music(background2)
+                                        print("Playing Background Music 2")
+                                    elif music_mode == 3:
+                                        # Play background music 3
+                                        play_background_music(background3)
+                                        print("Playing Background Music 3")
+                                    elif music_mode == 0:
+                                        # 不要背景音
+                                        current_music.stop()
+                                        print("no Background Music")
+                                        
+                                    
+                                
+                
+                        clock.tick(15)
+                
+                    if mode == 1:
+                        import easy
+                    elif mode == 2:
+                        import hard
+                    elif mode == 3:
+                        into_game()
+                
+                if __name__ == '__main__':
+                    pygame.init()
+                    width = 320
+                    height = 240
+                    screen = pygame.display.set_mode((width, height))
+                    clock = pygame.time.Clock()
+                    into_game()
+                
+              </code></pre>
+
+      </div>
+
+    </div><!-- /.container -->
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+  </body>
+</html>
